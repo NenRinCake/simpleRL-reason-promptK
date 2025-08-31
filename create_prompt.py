@@ -22,6 +22,13 @@ def parse_args():
     parser.add_argument('--use_k_ratio', type=float, default=0.3)
     return parser.parse_args()
 
+def get_k_step(output, k, delimiter="\n"): 
+    # 先去除多余的'\n'再进行分割 
+    output = re.sub(r'\n+', '\n', output) 
+    parts = output.split(delimiter) 
+    truncated_parts = parts[:k] 
+    return delimiter.join(truncated_parts)
+
 
 def main():
     mp.set_start_method("spawn", force=True)

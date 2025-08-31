@@ -35,8 +35,8 @@ ENTROPY_COEFFIENT=0.001
 KL_LOSS_TYPE="low_var_kl"
 # prompt_model 与 grpo 的 base_model 共用 temperature、top_p 与 top_k
 TEMPERATURE=1.0
-TOP_P=-1
-TOP_K=0.95
+TOP_P=0.95
+TOP_K=-1
 LOG_PROB_MICRO_BATCH_SIZE=160
 ROLLOUT_N=2
 KL_COEF=0.001

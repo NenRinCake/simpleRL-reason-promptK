@@ -64,7 +64,7 @@ python create_prompt.py \
   --train_file 'dataset/simplelr_abel_level3to5/train.parquet' \
   --output_folder 'dataset/simplelr_abel_level3to5/' \
   --k_steps $K_STEPS \
-  --emperature $TEMPERATURE \
+  --temperature $TEMPERATURE \
   --top_p $TOP_P \
   --top_k $TOP_K \
   --max_tokens_per_call $MAX_TOKENS_PER_CALL \
